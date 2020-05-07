@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Travel Survey Form</title>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <form id="survey-form">
+                <div class="form-card">
+                    <div class="heading">
+                        <div id="title-head">
+                            <h1 id="title">Survey Template</h1>
+                        </div>
+                        <div class="description">
+                            <p id="description">Fill the Form to Receive Tailored Travel Guide</p>
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <fieldset id="personal">
+                            <legend>Personal Details</legend>
+                            <div class="container">
+                                <div class="name">
+                                    <label for="name" id="name-label">Fullname</label>
+                                    <input type="text" id="name" placeholder="Fullname" required>
+                                </div>
+                                <div class="email">
+                                    <label for="email" id="email-label">Email</label>
+                                    <input type="email" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="age">
+                                    <label for="number" id="number-label">Age</label>
+                                    <input type="number" id="number" placeholder="Age" min="18" max="100" required>
+                                </div>
+                                <div class="address">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" placeholder="Address" required>
+                                </div>
+                                <div class="country">
+                                    <label for="dropdown">Country</label>
+                                    <select id="dropdown">
+                                        <option value="U.S">U.S</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                        <option value="Kenya">Kenya</option>
+                                    </select>
+                                </div>
+                                <div class="city">
+                                    <label for="city">City</label>
+                                    <select id="city">
+                                        <option value="New York">New York</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Texas">Texas</option>
+                                    </select>
+                                </div>
+                                <div class="state">
+                                    <label for="state">State</label>
+                                    <select id="state">
+                                        <option value="New York">New York</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Texas">Texas</option>
+                                    </select>
+                                </div>
+                                <div class="sex">
+                                    <fieldset>
+                                        <legend>Sex</legend>
+                                        <label for="male">Male <input type="radio" id="male" name="gender" value="Male" checked></label>
+                                        
+                                        <label for="female">Female <input type="radio" id="female" name="gender" value="Female"></label>
+                                        
+                                        <label for="other">Other <input type="radio" id="other" name="gender" value="Other"></label>
+                                        
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="budget">
+                        <fieldset id="budget">
+                            <legend>Traveller Type & Budget</legend>
+                            <div class="second-container">
+                                <div id="season-col">
+                                    <label for="fall"> <input type="checkbox" id="fall" value="fall"> Fall</label>
+                                    <label for="winter"> <input type="checkbox" id="winter" value="winter"> Winter</label>
+                                    <label for="summer"> <input type="checkbox" id="summer" value="summer"> Summer</label>
+                                    <label for="spring"> <input type="checkbox" id="spring" value="spring"> Spring</label>
+                                    <label for="holiday"> <input type="checkbox" id="holiday" value="holiday"> Holiday</label>
+                                </div>
+                                <div id="budget-col">
+                                    <label for="low"> <input type="checkbox" id="low" value="500"> Up to $500</label>
+                                    <label for="mid-low"> <input type="checkbox" id="mid-low" value="1000"> $500 to $1000</label>
+                                    <label for="middle"> <input type="checkbox" id="middle" value="1500"> $1000 to $1500</label>
+                                    <label for="mid-top"> <input type="checkbox" id="mid-top" value="2000"> $1500 to $2000</label>
+                                    <label for="top"> <input type="checkbox" id="top" value="2500"> $2000 to $ 2500</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="more-notes">
+                        <fieldset id="extra">
+                            <legend>Anything Else</legend>
+                            <div class="third-container">
+                                    <textarea id="aob" cols="90" rows="10" placeholder="Anything Else"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="buttons">
+                        <button id="submit" type="submit">Submit</button>
+                        <button id="reset" type="reset">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </main>
+</body>
+</html>
